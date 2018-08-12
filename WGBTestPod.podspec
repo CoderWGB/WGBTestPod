@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "WGBTestPod"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "A short This description is used to generate tags description of WGBTestPod."
   s.description  = <<-DESC
   					This description is used to generate tags 
@@ -21,17 +21,17 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.subspec 'MoudleA' do |ss|
-    ss.source_files = "WGBTestPodDemo", "WGBTestPodDemo/Classes/A/*.{h,m}"
-    ss.public_header_files = "WGBTestPodDemo", "WGBTestPodDemo/Classes/A/*.h"
+    ss.source_files = "WGBTestPodDemo/Classes/A/*.{h,m}"
+    ss.public_header_files = "WGBTestPodDemo/Classes/A/*.h"
   end
 
   s.subspec 'MoudleB' do |ss|
-    ss.source_files = "WGBTestPodDemo", "WGBTestPodDemo/Classes/B/*.{h,m}"
-    ss.public_header_files = "WGBTestPodDemo", "WGBTestPodDemo/Classes/B/*.h"
+    ss.source_files =  "WGBTestPodDemo/Classes/B/*.{h,m}"
+    ss.public_header_files = "WGBTestPodDemo/Classes/B/*.h"
   end
   s.subspec 'MoudleC' do |ss|
-    ss.source_files = "WGBTestPodDemo", "WGBTestPodDemo/Classes/C/*.{h,m}"
-    ss.public_header_files = "WGBTestPodDemo", "WGBTestPodDemo/Classes/C/*.h"
+    ss.source_files =  "WGBTestPodDemo/Classes/C/*.{h,m}"
+    ss.public_header_files = "WGBTestPodDemo/Classes/C/*.h"
   end
 
   # s.public_header_files = "Classes/**/*.h"

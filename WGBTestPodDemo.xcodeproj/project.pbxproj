@@ -8,12 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		9F94CF44232CE8083DF08F89 /* libPods-WGBTestPodDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B57101A97D01E444A0102E69 /* libPods-WGBTestPodDemo.a */; };
-		CAD069C121205A89008691D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD069C021205A89008691D2 /* AppDelegate.m */; };
-		CAD069C421205A89008691D2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD069C321205A89008691D2 /* ViewController.m */; };
 		CAD069C721205A89008691D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAD069C521205A89008691D2 /* Main.storyboard */; };
 		CAD069C921205A8A008691D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAD069C821205A8A008691D2 /* Assets.xcassets */; };
 		CAD069CC21205A8A008691D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAD069CA21205A8A008691D2 /* LaunchScreen.storyboard */; };
-		CAD069CF21205A8A008691D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD069CE21205A8A008691D2 /* main.m */; };
 		CAD069D821205AE5008691D2 /* RootFile.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD069D721205AE5008691D2 /* RootFile.m */; };
 		CAD069DE21205B0C008691D2 /* GroupA.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD069DD21205B0C008691D2 /* GroupA.m */; };
 		CAD069E121205B21008691D2 /* GroupB.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD069E021205B21008691D2 /* GroupB.m */; };
@@ -25,15 +22,10 @@
 		9F184C2DA496DB2C347E1FF7 /* Pods-WGBTestPodDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WGBTestPodDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WGBTestPodDemo/Pods-WGBTestPodDemo.release.xcconfig"; sourceTree = "<group>"; };
 		B57101A97D01E444A0102E69 /* libPods-WGBTestPodDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WGBTestPodDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAD069BC21205A89008691D2 /* WGBTestPodDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WGBTestPodDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CAD069BF21205A89008691D2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		CAD069C021205A89008691D2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CAD069C221205A89008691D2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CAD069C321205A89008691D2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CAD069C621205A89008691D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CAD069C821205A8A008691D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAD069CB21205A8A008691D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAD069CD21205A8A008691D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CAD069CE21205A8A008691D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CAD069D621205AE5008691D2 /* RootFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootFile.h; sourceTree = "<group>"; };
 		CAD069D721205AE5008691D2 /* RootFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootFile.m; sourceTree = "<group>"; };
 		CAD069DC21205B0C008691D2 /* GroupA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GroupA.h; sourceTree = "<group>"; };
@@ -95,15 +87,10 @@
 			isa = PBXGroup;
 			children = (
 				CAD069D521205A98008691D2 /* Classes */,
-				CAD069BF21205A89008691D2 /* AppDelegate.h */,
-				CAD069C021205A89008691D2 /* AppDelegate.m */,
-				CAD069C221205A89008691D2 /* ViewController.h */,
-				CAD069C321205A89008691D2 /* ViewController.m */,
 				CAD069C521205A89008691D2 /* Main.storyboard */,
 				CAD069C821205A8A008691D2 /* Assets.xcassets */,
 				CAD069CA21205A8A008691D2 /* LaunchScreen.storyboard */,
 				CAD069CD21205A8A008691D2 /* Info.plist */,
-				CAD069CE21205A8A008691D2 /* main.m */,
 			);
 			path = WGBTestPodDemo;
 			sourceTree = "<group>";
@@ -241,11 +228,8 @@
 			files = (
 				CAD069E121205B21008691D2 /* GroupB.m in Sources */,
 				CAD069E421205B2B008691D2 /* GroupC.m in Sources */,
-				CAD069C421205A89008691D2 /* ViewController.m in Sources */,
 				CAD069D821205AE5008691D2 /* RootFile.m in Sources */,
-				CAD069CF21205A8A008691D2 /* main.m in Sources */,
 				CAD069DE21205B0C008691D2 /* GroupA.m in Sources */,
-				CAD069C121205A89008691D2 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
