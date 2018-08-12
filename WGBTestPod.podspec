@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "WGBTestPod"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "A short This description is used to generate tags description of WGBTestPod."
   s.description  = <<-DESC
   					This description is used to generate tags 
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "8.0"
   s.source       = { :git => "https://github.com/CoderWGB/WGBTestPod.git", :tag => "#{s.version}" }
   # s.source_files  = "WGBTestPodDemo", "WGBTestPodDemo/Classes/**/*.{h,m}"
-  s.source_files  = "WGBTestPodDemo", "WGBTestPodDemo/Classes/*.{h,m}"
+  s.source_files  = "WGBTestPodDemo", "WGBTestPodDemo/Classes/RootFile.{h,m}"
 
   s.exclude_files = "Classes/Exclude"
   s.requires_arc = true

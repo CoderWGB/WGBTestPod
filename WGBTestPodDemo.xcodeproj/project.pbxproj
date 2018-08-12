@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F94CF44232CE8083DF08F89 /* libPods-WGBTestPodDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B57101A97D01E444A0102E69 /* libPods-WGBTestPodDemo.a */; };
 		CAD069C121205A89008691D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD069C021205A89008691D2 /* AppDelegate.m */; };
 		CAD069C421205A89008691D2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD069C321205A89008691D2 /* ViewController.m */; };
 		CAD069C721205A89008691D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAD069C521205A89008691D2 /* Main.storyboard */; };
@@ -20,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		402EB4191C8D0439EEB3F323 /* Pods-WGBTestPodDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WGBTestPodDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WGBTestPodDemo/Pods-WGBTestPodDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		9F184C2DA496DB2C347E1FF7 /* Pods-WGBTestPodDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WGBTestPodDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WGBTestPodDemo/Pods-WGBTestPodDemo.release.xcconfig"; sourceTree = "<group>"; };
+		B57101A97D01E444A0102E69 /* libPods-WGBTestPodDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WGBTestPodDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAD069BC21205A89008691D2 /* WGBTestPodDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WGBTestPodDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAD069BF21205A89008691D2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CAD069C021205A89008691D2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -45,17 +49,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F94CF44232CE8083DF08F89 /* libPods-WGBTestPodDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		72A422330447546AEDD7ED5A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				402EB4191C8D0439EEB3F323 /* Pods-WGBTestPodDemo.debug.xcconfig */,
+				9F184C2DA496DB2C347E1FF7 /* Pods-WGBTestPodDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7772E98172F8A89D92C4BE9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B57101A97D01E444A0102E69 /* libPods-WGBTestPodDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CAD069B321205A89008691D2 = {
 			isa = PBXGroup;
 			children = (
 				CAD069BE21205A89008691D2 /* WGBTestPodDemo */,
 				CAD069BD21205A89008691D2 /* Products */,
+				72A422330447546AEDD7ED5A /* Pods */,
+				7772E98172F8A89D92C4BE9C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +154,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CAD069D221205A8A008691D2 /* Build configuration list for PBXNativeTarget "WGBTestPodDemo" */;
 			buildPhases = (
+				D8E5A2E92F0B067F8C4DFFB8 /* [CP] Check Pods Manifest.lock */,
 				CAD069B821205A89008691D2 /* Sources */,
 				CAD069B921205A89008691D2 /* Frameworks */,
 				CAD069BA21205A89008691D2 /* Resources */,
@@ -187,6 +212,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D8E5A2E92F0B067F8C4DFFB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WGBTestPodDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CAD069B821205A89008691D2 /* Sources */ = {
@@ -337,6 +383,7 @@
 		};
 		CAD069D321205A8A008691D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 402EB4191C8D0439EEB3F323 /* Pods-WGBTestPodDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -354,6 +401,7 @@
 		};
 		CAD069D421205A8A008691D2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F184C2DA496DB2C347E1FF7 /* Pods-WGBTestPodDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
